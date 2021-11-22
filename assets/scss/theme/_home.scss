@@ -1,0 +1,303 @@
+/* about area style
+============================================================================================ */
+
+.about-area {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 200px;
+    .about-shape {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .about-thumb {
+        margin-left: -160px;
+    }
+    .about-content {
+        h2 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+        .primary-btn {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+/* features area style
+============================================================================================ */
+
+.features-area {
+    .section-title {
+        h2 {
+            color: #272833;
+            font-size: 110px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+    .col-lg-4:first-child {
+        .single-features-item {
+            margin-top: -150px;
+        }
+    }
+    .col-lg-4:nth-child(3) {
+        .single-features-item {
+            margin-top: 80px;
+        }
+    }
+    .col-lg-4:nth-child(4) {
+        .single-features-item {
+            margin-top: -230px;
+        }
+    }
+    .col-lg-4:nth-child(5) {
+        .single-features-item {
+            margin-top: -80px;
+        }
+    }
+}
+
+.single-features-item {
+    background: #272833;
+    min-height: 450px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 40px 20px;
+    .features-icon {
+        height: 81px;
+        width: 81px;
+        background: #FF980B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 10px;
+        margin-bottom: 15px;
+        img {
+            max-width: 100%;
+        }
+    }
+    h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+/* tokenomics area style
+============================================================================================ */
+
+.big-bg-wraper {
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: "";
+        background: url(../img/bg/big-bg.png) center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 90%;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.tokenomic-area {
+    padding: 220px 0 120px;
+    margin-top: -110px;
+    .tokenomic-thumb {
+        margin-right: -100px;
+        margin-left: 40px;
+    }
+    .tokenomic-content {
+        h2 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+        .primary-btn {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+/* roadmap area style
+============================================================================================ */
+
+.roadmap-area {
+    .section-title {
+        margin-bottom: 120px;
+    }
+    .timeline-wraper {
+        position: relative;
+        z-index: 1;
+        padding-top: 50px;
+        &:before {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #fff;
+            @include transform(translateX(-50%));
+            content: "";
+        }
+        .single-timeline-item {
+            margin-bottom: 50px;
+            &.left-side-item {
+                text-align: right;
+                .timeline-inner {
+                    padding-left: 0;
+                    padding-right: 40px;
+                    .single-timeline-head {
+                        position: relative;
+                        &:before {
+                            left: auto;
+                            right: 0;
+                            bottom: 0;
+                            margin-left: 0;
+                            margin-right: -63px;
+                        }
+                        img {
+                            margin-left: 0;
+                            margin-right: -50px;
+                        }
+                    }
+                    ul {
+                        padding-left: 0;
+                        padding-right: 15px;
+                        li {
+                            padding-left: 0;
+                            padding-right: 30px;
+                            &:before {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .timeline-inner {
+                padding-left: 40px;
+                .single-timeline-head {
+                    position: relative;
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 22px;
+                        width: 22px;
+                        content: "";
+                        background: $primary-color2;
+                        margin-left: -63px;
+                        border-radius: 50%;
+                    }
+                    h3 {
+                        font-size: 30px;
+                        font-family: $russo;
+                        font-weight: 400;
+                        color: $primary-color;
+                        margin-bottom: 5px;
+                    }
+                    img {
+                        margin-left: -50px;
+                    }
+                }
+                ul {
+                    margin-top: 10px;
+                    padding-left: 15px;
+                    li {
+                        font-size: 18px;
+                        position: relative;
+                        z-index: 1;
+                        padding-left: 30px;
+                        font-family: $montserrat;
+                        margin-bottom: 15px;
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                            top: -1px;
+                            font-family: "Font Awesome 5 Free";
+                            content: "\f058";
+                            color: $primary-color2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* faq area style
+============================================================================================ */
+
+.faq-area {
+    padding-top: 80px;
+    .section-title {
+        text-align: left;
+    }
+    .accordion {
+        .accordion-item .accordion-header .accordion-button[aria-expanded="true"] .fa-plus {
+            display: none;
+        }
+        .accordion-item .accordion-header .accordion-button[aria-expanded="false"] .fa-minus {
+            display: none;
+        }
+        .accordion-item {
+            background: #272833;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+            border-radius: 4px;
+            padding: 0;
+            border: 0.5px solid #fff;
+            margin-bottom: 30px;
+            .accordion-header {
+                .accordion-button {
+                    color: #fff;
+                    background-color: transparent;
+                    font-size: 24px;
+                    padding: 26px 20px;
+                    position: relative;
+                    padding-right: 50px;
+                    i {
+                        position: absolute;
+                        right: 26px;
+                        color: $primary-color2;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    span {
+                        color: $primary-color;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .accordion-body {
+                padding-top: 0;
+                padding-left: 45px;
+                padding-right: 50px;
+                padding-bottom: 25px;
+                p {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/* banner area style
+============================================================================================ */
+
+.banner-area {
+    background: url(../img/bg/banner-bg.png) bottom no-repeat;
+    background-size: cover;
+    padding: 165px 0 140px;
+    .banner-content {
+        margin-right: -20px;
+        h2 {
+            font-size: 72px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            span {
+                color: $primary-color2;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+    }
+}
